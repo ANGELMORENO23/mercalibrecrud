@@ -15,6 +15,6 @@ router.get('/login', login);
 router.get('/register', register);
 router.post('/register' ,validateRegister,createUser);
 
-module.exports = router;
+module.exports= router;
 
 

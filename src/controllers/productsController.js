@@ -56,7 +56,7 @@ const controller = {
 
 	// Update - Form to edit
 	edit: (req, res) => {
-		const id = req.params.id;
+		const { id } = req.params;
 		const products = getJson();
 		const producto = products.find(producto => producto.id == id)
 		
@@ -64,20 +64,21 @@ const controller = {
 	},
 	// Update - Method to update
 	update: (req, res) => {
+		const files = req.files;
 		const id = req.params.id;
-		const{name,price,discount,category,description,image} = req.body;
+		const{name,price,discount,category,description} = req.body;
 		const products = getJson()
 		const nuevoArrary = products.map(producto =>{
 		if(producto.id == id){
 			return{
-				id,
-				name:name.trim(),
-				price,
-				discount,
-				category,
+				id:+id,
+				name:name,
+				price:+price,
+				discount:discount,
+				category:category,
 				description:description.trim(),
-				image: image ? image : producto.image
-			}
+				image: files ? files[0].filename : producto.image,
+			};
 		}
 		return producto
 	})
