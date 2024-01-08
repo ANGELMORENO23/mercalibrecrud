@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs", {title: 'Todos los productos'})%>
+
+        
+
+        <body>
+            <!-- Header -->
+            <%- include("../partials/headerNavbar.ejs")%>
+            <!-- /Header -->
+        
+        <main class="main-reg-caja">
+            <form  class="main-form" action="/" method="post">
+                    <section>
+                        <h4 class="h1_register">LOGIN</h4>
+                        <article class="articulo_registro_main">
+                            <label for="nombre"></label>
+                            <input class="imput_register" type="text" name="nombre" id="nombre" placeholder="Ingresa nombre" value="<%= locals.old && old.nombre %>" >
+                            <% if (locals.errors && errors.nombre) { %>
+                                <p class="feedback"><%= errors.nombre.msg %></p>
+                                <% } %>
+                        </article>
+                        <article class="articulo_registro_main">
+                            
+                          <label for="contraseña"></label>
+                          <input class="imput_register" type="password" name="contraseña" id="contraseña" placeholder="Ingresa contraseña" value="<%= locals.old && old.contraseña %>" >
+                          <% if (locals.errors && errors.contraseña) { %>
+                              <p class="feedback"><%= errors.contraseña.msg %></p>
+                              <% } %>
+                      </article>
+                    </section>
+                    <a href="#">No recordas la contraseña?</a>
+                        <article class="articulo_registro_main">
+                            <button class="btn_enviar_registro" type="submit">Ingresar</button>
+                            <button  onclick="location.href='/users/register'" class="btn_reset_registro">Registarse</button>
+                        </article>
+                </form>
+            </main>
+        
+                <!-- footer -->
+                <%- include("../partials/footer.ejs")%>
+                <!-- /footer -->
+            </body>
+        </html>

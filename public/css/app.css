@@ -460,3 +460,67 @@ textarea.form-input {
     margin: auto;
   }
 }
+/* register */
+.main-reg-caja{
+  padding: 10px;
+  text-align: center;
+}
+.main-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(225, 227, 231);
+}
+.h1_register{
+  margin: 15px 0;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.articulo_registro_main{
+  margin: 15px 0;
+}
+.imput_register{
+  width: 95%;
+  height: 30px;
+  border: 1px solid var(--color-grisClaro);
+  border-radius: 5px;
+}
+.btn_enviar_registro{
+  width: 15%;
+  height: 40px;
+  background-color: #0000ffc9;
+  color: white;
+  border: 1px solid var(--color-celeste);
+  border-radius: 5px;
+    }
+
+.btn_reset_registro{
+  width: 15%;
+  height: 40px;
+  background-color: #ff0000c2;
+  color: white;
+  border: 1px solid var(--color-celeste);
+  border-radius: 5px;
+}
+.articulo_login_main div{
+display: flex;
+  justify-content:start ;
+}
+
+@media(min-width: 768px){
+  .main_registro{
+      text-align: center;
+  }
+  .imput_register{
+      width: 50%;
+      height: 35px;
+  }
+}
+
+@media  (min-width: 1024px){
+  .imput_register{
+      width: 30%;
+      height:35px;
+      text-align: center;
+}
+}
