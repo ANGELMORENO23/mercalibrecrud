@@ -10,7 +10,7 @@ const controller = {
 	index: (req, res) => {
 		const visited = products.filter(producto => producto.category == "visited");
 		const inSale = products.filter(producto => producto.category == "in-sale") 
-		res.render("index",{visited,inSale,toThousand})
+		res.render("index",{visited,inSale,toThousand,usuario:req.session.user})
 	},
 	search: (req, res) => {
 		const busqueda = req.query.keywords;

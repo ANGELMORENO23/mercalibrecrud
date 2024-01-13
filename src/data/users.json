@@ -6,41 +6,10 @@
     "terminos": "on"
   },
   {
-    "Nombre": "3",
-    "correo": "tamizmoreno107@gmail.com",
-    "contraseña": "sdasdas",
-    "terminos": "on"
-  },
-  {
-    "Nombre": "3",
-    "correo": "tamizmoreno107@gmail.com",
-    "contraseña": "asdas",
-    "terminos": "on"
-  },
-  { "Nombre": "3", "correo": "tamizmoreno107@gmail.com", "contraseña": "jkkl" },
-  { "Nombre": "3", "correo": "tamizmoreno107@gmail.com", "contraseña": "" },
-  {
-    "nombre": "Tami",
-    "apellido": "Moreno •",
-    "email": "tamizmoreno107@gmail.com",
-    "contraseña": "dsssds"
-  },
-  { "nombre": "", "apellido": "", "email": "", "contraseña": "" },
-  { "nombre": "", "apellido": "", "email": "", "contraseña": "" },
-  { "nombre": "", "apellido": "", "email": "", "contraseña": "" },
-  { "nombre": "s", "apellido": "s", "email": "sads@sad", "contraseña": "" },
-  {
-    "nombre": "sadasdas",
-    "apellido": "sadsada",
-    "email": "silvanasalinas090@gmail.com",
-    "contraseña": "dasdsa"
-  },
-  {
-    "nombre": "sdasdsa",
-    "apellido": "angel Moreno",
-    "email": "tamizmoreno107@gmail.com",
-    "contraseña": "dsaasdsada"
-  },
-  {
+    "nombre": "Angel",
+    "apellido": "moreno",
+    "email": "chinoman309@hotmail.com",
+    "contraseña": "chino123"
   }
+  
 ]
